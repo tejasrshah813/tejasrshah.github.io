@@ -52,7 +52,7 @@ h2{
 }
 
 .checkpoint{
-    max-width:34em;
+    max-width:50vw;
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
@@ -83,6 +83,7 @@ h2{
     padding-right: 3em;
     transform: translateX(-17em);
 }
+
 .checkpoint:nth-child(odd)::before,
 .checkpoint:nth-child(even)::before{
     content:'';
@@ -97,7 +98,6 @@ h2{
 .checkpoint:nth-child(odd)::before{
     left:0;
 }
-
 .checkpoint:nth-child(even)::before{
     right:0;
 }
@@ -125,7 +125,6 @@ h2{
 .end{
     text-align: center;
     font-size: 30px;
-
 }
 
 /*Copy button from main*/
