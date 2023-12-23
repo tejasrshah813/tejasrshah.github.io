@@ -1,178 +1,656 @@
-<!DOCTYPE HTML>
-<html>
-    <div class = "title">
-        <h1>The History of the Server</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Timeline</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1d2123;
+      font-family: "Inter", sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 !important;
+    }
+
+    a {
+      text-decoration: none !important;
+      display: inline-block;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: ;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 26px;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    .timelines h2 {
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .d-flex-2 {
+      display: flex;
+      align-items: center;
+    }
+
+    .timeline-area {
+      padding: 80px 0;
+    }
+
+    .all-timelines {
+      position: relative;
+    }
+
+    .timelines h2 {
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .all-timelines::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 100%;
+      width: 2px;
+      background: #efa22f;
+      top: 20px;
+    }
+
+    .single-timeline {
+      margin-bottom: 22px;
+    }
+
+    .timeline-blank {
+      width: 50%;
+    }
+
+    .timeline-text {
+      width: 50%;
+      padding-left: 30px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .timeline-text h6 {
+      color: #f0f1f2;
+      font-weight: 900;
+      display: inline-block;
+      font-size: 1rem;
+    }
+
+    .timeline-text span {
+      color: #f0f1f2;
+      display: block;
+      width: 100%;
+    }
+
+    .single-timeline:nth-child(even) .timeline-text span {
+      text-align: right;
+    }
+
+    .t-square {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: -6px;
+      background: #efa22f;
+    }
+
+    .single-timeline:nth-child(even) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+
+    .single-timeline:nth-child(even) .t-square {
+      right: -6px;
+      left: unset;
+    }
+
+    .single-timeline:nth-child(even) .timeline-text {
+      padding-left: 0;
+      padding-right: 30px;
+      text-align: right;
+    }
+
+    @media all and (max-width: 991px) {}
+
+    @media all and (max-width: 768px) {
+      .all-timelines::before {
+        right: unset;
+        top: 0;
+      }
+
+      .single-timeline:nth-child(2n) .timeline-text {
+        padding-left: 30px;
+        padding-right: 0;
+        text-align: left;
+      }
+
+      .single-timeline:nth-child(2n) .t-square {
+        left: -6px;
+        right: unset;
+      }
+
+      .timeline-blank {
+        display: none;
+      }
+
+      .timeline-text {
+        width: 100%;
+      }
+
+      .single-timeline:nth-child(even) .timeline-text span {
+        text-align: left !important;
+      }
+    }
+
+    @media all and (max-width: 575px) {}
+
+    @media all and (max-width: 360px) {
+      .all-timelines::before {
+        top: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="timeline-area">
+    <div class="container">
+      <div class="timelines">
+        <h2>The Timeline</h2>
+      </div>
+      <div class="all-timelines">
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>March 14th, 2020</h6> — Vaheland minecraft server is created
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>September 18th, 2020 </h6> — Imposters Baby Server is created
+              Played Among Us for the first time
+              
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>October 16th, 2020</h6> — Tejas breaks his glasses with the hardest hardie of his life
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>October 17th, 2020 </h6> — First pin on the server
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>November 17th, 2020</h6> — Poketwo joined the server,
+              Dank Vahe joined the server
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>December 15th, 2020</h6> — Groovy joined the server
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+          <div class="timeline-blank"></div>
+          <div class="timeline-text d-flex-2">
+            <span>
+              <h6>January 17th, 2021</h6> — Chess is reborn
+            </span>
+            <div class="t-square"></div>
+          </div>
+        </div>
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>March 10th, 2021</h6> — The first game of 30 second chess
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+        <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>March 12th, 2021</h6> — We play Krunker together for the first time
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+        
+          <!--SINGLE TIMELINE-->
+        <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>March 17th, 2021</h6> — Soods makes the first Vib edit
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+         <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>March 26th, 2021</h6> — Marshall joins the server
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>April 2nd, 2021</h6> — The first and second emoji is made (VibiJeebi & Tejad)
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>April 10th, 2021</h6> — Krish joins the server
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>April 17th, 2021</h6> — Rocket league becomes relevant
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>April 21st, 2021</h6> — First Svib is muttered by poketwo
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>April 27th, 2021</h6> — Smash Bros Ultimate becomes relevant
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>May 1st, 2021</h6> — The rise of Apex (and Tejas’ first win on his second game)
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>May 2nd, 2021</h6> — Vibhu pays Kelvin to make an emote
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>May 5th, 2021</h6> — Soods drops the first vibad in the statement, “tomorrow now tomorrow vibad”
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>May 7th, 2021</h6> — Svib is watching you has been created
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>May 21st, 2021</h6> — Mendez joined the server
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>June 7th, 2021</h6> — Henry AP Hug video resurfaced
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>July 10th, 2021</h6> — First beach day (with the bad group photos)
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>July 27th, 2021</h6> — Baja blast wins first rl tourney from the group
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>July 31st, 2021</h6> — Tejas expels Traustin
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 8th, 2021</h6> — Pokemon League joins the scene
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 8th, 2021</h6> — Jon makes Svibs Eggs
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 13th, 2021</h6> — Jon makes Baja Blast “Meth” (its rock candy)
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 14th, 2021</h6> — Henry enters the basement
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 17th, 2021</h6> — Tejas says vubad
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 18th, 2021</h6> — First general got too cursed and ends
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 29th, 2021</h6> — The first supper at olive garden
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>August 30th, 2021</h6> — Groovy shuts down =(
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+           <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>September 9th, 2021</h6> — Tejbot works for the first time
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+             <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>September 17th, 2021</h6> — Henry and Kelvin dropped to Bronze in car ball
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+             <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>October 26th, 2021</h6> — Geoguesser enters the party
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+             <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>November 3rd, 2021</h6> — Barris matches with Vibha
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+             <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>December 15th, 2021</h6> — Jon meets Gasper (in The Rumble Zone)
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+             <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>December 17th, 2021</h6> — Otto tries Baja Blast for the first time
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+             <!--SINGLE TIMELINE-->
+         <div class="single-timeline d-flex-2">
+            <div class="timeline-blank"></div>
+            <div class="timeline-text d-flex-2">
+              <span>
+                <h6>December 26th, 2021</h6> — Tejas tries Baja Blast for the first time
+              </span>
+              <div class="t-square"></div>
+            </div>
+          </div>
+
+
+
+
+
+
+      </div>
     </div>
+  </div>
+</body>
 
-    <style>
-        body{
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        body::before{
-            content: '';
-            background: rgba(0,0,0);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 1000%;
-            z-index: -1;
-        }
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            margin: 0.3em;
-            font-size:3em;
-        }
-
-        h2{
-            margin-bottom: 0.5em;
-        }
-
-        .title {
-            text-align: center;
-            color: white
-        }
-
-        .title p{
-            color: #0d71fc;
-            font-size: 1.3em
-        }
-
-        .timeline {
-            margin: 5em auto;
-            max-width: 34.15em;
-        }
-
-        .checkpoint{
-            max-width:34em;
-            padding-top: 2em;
-            padding-bottom: 2em;
-            position: relative;
-        }
-
-        .checkpoint div{
-            border: 2px solid #888;
-            border-radius: 1em;
-            padding: 1.5em;
-        }
-
-        .checkpoint p{
-            line-height: 27px;
-            color: #ccc;
-        }
-
-        .checkpoint:nth-child(odd){
-            border-left: 3px solid #888;
-            padding-left: 3em;
-            transform: translateX(17em);
-        }
-
-        .checkpoint:nth-child(even){
-            border-right: 3px solid #888;
-            padding-right: 3em;
-            transform: translateX(-17em);
-        }
-        .checkpoint:nth-child(odd)::before,
-        .checkpoint:nth-child(even)::before{
-            content:'';
-            background: #888;
-            width: 3em;
-            height: 3px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%); 
-        }
-
-        .checkpoint:nth-child(odd)::before{
-            left:0;
-        }
-
-        .checkpoint:nth-child(even)::before{
-            right:0;
-        }
-
-        .checkpoint:nth-child(odd) div::before,
-        .checkpoint:nth-child(even) div::before{
-            content:'';
-            background: #fff;
-            box-shadow: 0 0 0.5em #0d71fc;
-            width: 0.8em;
-            height: 0.8em;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            border-radius: 50%;
-        }
-
-        .checkpoint:nth-child(odd) div::before{
-            left: -0.5em;
-        }
-        .checkpoint:nth-child(even) div::before{
-            right: -0.5em;
-        }
-    </style>
-
-    <div class = "timeline">
-        <div class = "checkpoint">
-            <div>
-                <h2> Date the server was created</h2>
-                <p>
-                    It was created on this day and
-                </p>
-            </div>
-        </div>
-
-        <div class = "checkpoint">
-            <div>
-                <h2> The vib</h2>
-                <p>
-                    The stib?
-                </p>
-            </div>
-        </div>
-
-        <div class = "checkpoint">
-            <div>
-                <h2> voobad</h2>
-                <p>
-                    voob
-                </p>
-            </div>
-        </div>
-
-        <div class = "checkpoint">
-            <div>
-                <h2> gooby</h2>
-                <p>
-                    The goob
-                </p>
-            </div>
-        </div>
-
-        <div class = "checkpoint">
-            <div>
-                <h2> abad rizzchess</h2>
-                <p>
-                    rizzy glizzy
-                </p>
-            </div>
-        </div>
-
-        <div class = "checkpoint">
-            <div>
-                <h2> marriage arc</h2>
-                <p>
-                    1 year strong
-                </p>
-            </div>
-        </div>
-
-    </div>
 </html>
